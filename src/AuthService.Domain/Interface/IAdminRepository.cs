@@ -2,23 +2,23 @@ using AuthService.Domain.Entities;
 
 namespace AuthService.Domain.Interfaces;
 
-public interface IUserRepository
+public interface IAdminRepository
 {
     // Métodos de creación
-    Task<User> CreateAsync(User user);
+    Task<Admin> CreateAsync(Admin admin);
 
     // Métodos de consulta
-    Task<User?> GetByIdAsync(string id);
+    Task<Admin?> GetByIdAsync(string id);
 
-    Task<User?> GetByEmailAsync(string email);
+    Task<Admin?> GetByEmailAsync(string email);
 
-    Task<IEnumerable<User>> GetAllAsync();
+    Task<IEnumerable<Admin>> GetAllAsync();
 
     // Validaciones
     Task<bool> ExistsByEmailAsync(string email);
 
     // Métodos de actualización
-    Task<User> UpdateAsync(User user);
+    Task<Admin> UpdateAsync(Admin admin);
 
     Task<bool> UpdateStatusAsync(string id, string status);
 

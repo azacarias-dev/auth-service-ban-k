@@ -50,4 +50,9 @@ public class User
 
     [Required(ErrorMessage = "Active status es requerido.")]
     public bool IsActive { get; set; } = true;
+
+    public ICollection<UserRole> UserRoles { get; set; } = [];
+    public UserAccount UserAccount { get; set; } = null!;
+    public UserEmail UserEmail { get; set; } = null!;
+    public UserPasswordReset UserPasswordReset { get; set; } = null!;
 }
