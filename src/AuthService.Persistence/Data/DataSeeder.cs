@@ -3,7 +3,7 @@ using AuthService.Persistence.Data;
 using AuthService.Application.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthService.Persistence.Seeders;
+namespace AuthService.Persistence.Data;
 
 public static class DataSeeder
 {
@@ -53,7 +53,7 @@ public static class DataSeeder
             Address = "SYSTEM ADDRESS",
             JobName = "SYSTEM ADMIN",
             MonthlyIncome = 0,
-            Birthdate = new DateTime(2000, 1, 1),
+            Birthdate = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             CreatedAt = DateTime.UtcNow,
             IsActive = true
         };

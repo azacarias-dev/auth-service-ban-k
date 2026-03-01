@@ -23,20 +23,6 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        // Convertir CamelCase a snake_case
-        foreach (var entity in modelBuilder.Model.GetEntityTypes())
-        {
-            var tableName = entity.GetTableName();
-            if (!string.IsNullOrEmpty(tableName))
-                entity.SetTableName(ToSnakeCase(tableName));
-
-            foreach (var property in entity.GetProperties())
-            {
-                var columnName = property.GetColumnName();
-                if (!string.IsNullOrEmpty(columnName))
-                    property.SetColumnName(ToSnakeCase(columnName));
-            }
-        }
 
         // USER
         modelBuilder.Entity<User>(entity =>
@@ -46,17 +32,22 @@ public class ApplicationDbContext : DbContext
             entity.HasIndex(e => e.Email).IsUnique();
             entity.HasIndex(e => e.Dpi).IsUnique();
 
-            entity.HasMany<UserRole>()
+            entity.HasMany(e => e.UserRoles)
                   .WithOne(ur => ur.User)
                   .HasForeignKey(ur => ur.UserId)
                   .OnDelete(DeleteBehavior.Cascade);
+                
+            entity.HasOne(e => e.UserAccount)
+                  .WithOne(ua => ua.User)
+                  .HasForeignKey<UserAccount>(ua => ua.UserId)
+                  .OnDelete(DeleteBehavior.Cascade);
 
-            entity.HasOne<UserEmail>()
+            entity.HasOne(e => e.UserEmail)
                   .WithOne(ue => ue.User)
                   .HasForeignKey<UserEmail>(ue => ue.UserId)
                   .OnDelete(DeleteBehavior.Cascade);
 
-            entity.HasOne<UserPasswordReset>()
+            entity.HasOne(e => e.UserPasswordReset)
                   .WithOne(upr => upr.User)
                   .HasForeignKey<UserPasswordReset>(upr => upr.UserId)
                   .OnDelete(DeleteBehavior.Cascade);
@@ -68,6 +59,11 @@ public class ApplicationDbContext : DbContext
         {
             entity.HasKey(e => e.Id);
             entity.HasIndex(e => e.Name).IsUnique();
+
+            entity.HasMany(e => e.UserRoles)
+                  .WithOne(ur => ur.Role)
+                  .HasForeignKey(ur => ur.RoleId)
+                  .OnDelete(DeleteBehavior.Cascade);
         });
 
         // USER ROLE (Tabla Intermedia)
@@ -77,11 +73,6 @@ public class ApplicationDbContext : DbContext
 
             entity.HasIndex(e => new { e.UserId, e.RoleId })
                   .IsUnique();
-
-            entity.HasOne(e => e.Role)
-                  .WithMany(r => r.UserRoles)
-                  .HasForeignKey(e => e.RoleId)
-                  .OnDelete(DeleteBehavior.Cascade);
         });
 
 
@@ -101,6 +92,22 @@ public class ApplicationDbContext : DbContext
             entity.HasKey(e => e.Id);
             entity.HasIndex(e => e.Email).IsUnique();
         });
+
+
+        // Convertir CamelCase a snake_case
+        foreach (var entity in modelBuilder.Model.GetEntityTypes())
+        {
+            var tableName = entity.GetTableName();
+            if (!string.IsNullOrEmpty(tableName))
+                entity.SetTableName(ToSnakeCase(tableName));
+
+            foreach (var property in entity.GetProperties())
+            {
+                var columnName = property.GetColumnName();
+                if (!string.IsNullOrEmpty(columnName))
+                    property.SetColumnName(ToSnakeCase(columnName));
+            }
+        }
     }
 
     // Método para convertir a snake_case

@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AuthService.Domain.Entities;
 
@@ -7,6 +8,11 @@ public class UserAccount
     [Key]
     [MaxLength(16)]
     public string Id { get; set; } = string.Empty;
+
+    [Required]
+    [MaxLength(16)]
+    [ForeignKey(nameof(User))]
+    public string UserId { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "Nombre completo es requerido.")]
     [MaxLength(100)]
@@ -43,4 +49,6 @@ public class UserAccount
 
     [Required]
     public DateTime CreatedAt { get; set; }
+
+    public User User { get; set; } = null!;
 }
