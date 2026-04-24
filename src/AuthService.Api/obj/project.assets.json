@@ -4001,19 +4001,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aless\\.nuget\\packages\\": {}
+    "C:\\Users\\jgome\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Api\\AuthService.Api.csproj",
+      "projectUniqueName": "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Api\\AuthService.Api.csproj",
       "projectName": "AuthService.Api",
-      "projectPath": "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Api\\AuthService.Api.csproj",
-      "packagesPath": "C:\\Users\\aless\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Api\\obj\\",
+      "projectPath": "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Api\\AuthService.Api.csproj",
+      "packagesPath": "C:\\Users\\jgome\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\aless\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jgome\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4025,11 +4025,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Application\\AuthService.Application.csproj": {
-              "projectPath": "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Application\\AuthService.Application.csproj"
+            "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Application\\AuthService.Application.csproj": {
+              "projectPath": "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Application\\AuthService.Application.csproj"
             },
-            "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Persistence\\AuthService.Persistence.csproj": {
-              "projectPath": "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Persistence\\AuthService.Persistence.csproj"
+            "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Persistence\\AuthService.Persistence.csproj": {
+              "projectPath": "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Persistence\\AuthService.Persistence.csproj"
             }
           }
         }
