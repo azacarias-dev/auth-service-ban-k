@@ -5,7 +5,7 @@ using MailKit.Security;
 using MimeKit;
 using AuthService.Application.Interfaces;
  
-namespace AuthService.Application.Service;
+namespace AuthService.Application.Services;
  
 public class EmailService(IConfiguration configuration, ILogger<EmailService> logger) : IEmailService
 {
@@ -16,7 +16,7 @@ public class EmailService(IConfiguration configuration, ILogger<EmailService> lo
  
         var body = $@"
             <p>Hola {username},</p>
-            <p>Gracias por registrarte en Kinal Sport. Por favor, haz clic en el siguiente enlace para verificar tu email:</p>
+            <p>Gracias por registrarte en BANK-K. Por favor, haz clic en el siguiente enlace para verificar tu email:</p>
             <p><a href='{verificationUrl}'>Verificar Email</a></p>
             <p>Si no te registraste, ignora este mensaje.</p>
             ";

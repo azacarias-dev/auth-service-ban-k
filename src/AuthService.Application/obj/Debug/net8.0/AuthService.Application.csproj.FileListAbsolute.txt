@@ -14,3 +14,9 @@ C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Applicatio
 C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\refint\AuthService.Application.dll
 C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.pdb
 C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\ref\AuthService.Application.dll
+C:\Users\jgome\OneDrive\Documentos\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.AssemblyReference.cache
+C:\Users\jgome\OneDrive\Documentos\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jgome\OneDrive\Documentos\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.AssemblyInfoInputs.cache
+C:\Users\jgome\OneDrive\Documentos\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.AssemblyInfo.cs
+C:\Users\jgome\OneDrive\Documentos\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.CoreCompileInputs.cache
+C:\Users\jgome\OneDrive\Documentos\auth-service-ban-k\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.sourcelink.json
