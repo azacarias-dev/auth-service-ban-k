@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MYVcXCI6ZAs=",
+  "dgSpecHash": "aLiFzbWnKp0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jgome\\OneDrive\\Documentos\\auth-service-ban-k\\src\\AuthService.Domain\\AuthService.Domain.csproj",
+  "projectFilePath": "C:\\Users\\aless\\Documents\\Portfolio\\auth-service-ban-k\\src\\AuthService.Domain\\AuthService.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jgome\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\aless\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

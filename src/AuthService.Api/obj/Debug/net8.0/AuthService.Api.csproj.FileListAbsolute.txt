@@ -153,3 +153,9 @@ C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\obj\De
 C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\obj\Debug\net8.0\AuthService.Api.pdb
 C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\obj\Debug\net8.0\AuthService.Api.genruntimeconfig.cache
 C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\obj\Debug\net8.0\ref\AuthService.Api.dll
+C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\bin\Debug\net8.0\AuthService.Api.xml
+C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\bin\Debug\net8.0\Konscious.Security.Cryptography.Argon2.dll
+C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\bin\Debug\net8.0\Konscious.Security.Cryptography.Blake2.dll
+C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\aless\Documents\Portfolio\auth-service-ban-k\src\AuthService.Api\obj\Debug\net8.0\AuthService.Api.xml

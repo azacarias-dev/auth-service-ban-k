@@ -10,10 +10,6 @@ public class RegisterDto
     public string Name { get; set; } = string.Empty;
 
     [Required]
-    [MaxLength(25)]
-    public string Surname { get; set; } = string.Empty;
-
-    [Required]
     [EmailAddress]
     public string Email { get; set; } = string.Empty;
 
@@ -28,4 +24,19 @@ public class RegisterDto
     [Required]
     [StringLength(8, MinimumLength = 8)]
     public string Phone { get; set; } = string.Empty;
+
+    [Required]
+    [MaxLength(20)]
+    public string Dpi { get; set; } = string.Empty;
+
+    [Required]
+    [MaxLength(100)]
+    public string JobName { get; set; } = string.Empty;
+
+    [Required]
+    [Range(0, double.MaxValue)]
+    public decimal MonthlyIncome { get; set; }
+
+    [Required]
+    public DateTime Birthdate { get; set; }
 }

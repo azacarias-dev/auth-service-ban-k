@@ -48,6 +48,9 @@ public class User
     [Required]
     public DateTime CreatedAt { get; set; }
 
+    [Required]
+    public DateTime UpdatedAt { get; set; }
+
     [Required(ErrorMessage = "Active status es requerido.")]
     public bool IsActive { get; set; } = true;
 

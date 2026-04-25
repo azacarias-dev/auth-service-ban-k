@@ -41,7 +41,6 @@ public class UserManagementService(IUserRepository users, IRoleRepository roles)
         {
             Id = user.Id,
             Name = user.Name,
-            Surname = user.Surname,
             Email = user.Email,
             Address = user.Address,
             Phone = user.Phone,
@@ -67,7 +66,6 @@ public class UserManagementService(IUserRepository users, IRoleRepository roles)
         {
             Id = u.Id,
             Name = u.Name,
-            Surname = u.Surname,
             Email = u.Email,
             Address = u.Address,
             Phone = u.Phone,

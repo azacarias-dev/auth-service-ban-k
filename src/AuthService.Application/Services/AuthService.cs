@@ -51,11 +51,14 @@ public class AuthService(
         {
             Id = userId,
             Name = registerDto.Name,
-            Surname = registerDto.Surname,
             Email = registerDto.Email.ToLowerInvariant(),
             Address = registerDto.Address,
             Phone = registerDto.Phone,
             Password = passwordHashService.HashPassword(registerDto.Password),
+            Dpi = registerDto.Dpi,
+            JobName = registerDto.JobName,
+            MonthlyIncome = registerDto.MonthlyIncome,
+            Birthdate = registerDto.Birthdate,
             IsActive = false,
             UserEmail = new UserEmail
             {
@@ -166,7 +169,6 @@ public class AuthService(
         {
             Id = user.Id,
             Name = user.Name,
-            Surname = user.Surname,
             Email = user.Email,
             Phone = user.Phone,
             Role = userRole,
