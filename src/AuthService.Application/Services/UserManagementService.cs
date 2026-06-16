@@ -44,6 +44,10 @@ public class UserManagementService(IUserRepository users, IRoleRepository roles)
             Email = user.Email,
             Address = user.Address,
             Phone = user.Phone,
+            Dpi = user.Dpi,
+            JobName = user.JobName,
+            MonthlyIncome = user.MonthlyIncome,
+            Birthdate = user.Birthdate,
             Role = role.Name,
             IsActive = user.IsActive,
             IsEmailVerified = user.UserEmail?.EmailVerified ?? false,
@@ -69,11 +73,80 @@ public class UserManagementService(IUserRepository users, IRoleRepository roles)
             Email = u.Email,
             Address = u.Address,
             Phone = u.Phone,
+            Dpi = u.Dpi,
+            JobName = u.JobName,
+            MonthlyIncome = u.MonthlyIncome,
+            Birthdate = u.Birthdate,
             Role = roleName,
             IsActive = u.IsActive,
             IsEmailVerified = u.UserEmail?.EmailVerified ?? false,
             CreatedAt = u.CreatedAt,
             UpdatedAt = u.UpdatedAt
         }).ToList();
+    }
+
+    public async Task<IReadOnlyList<UserResponseDto>> GetAdminsAsync()
+    {
+        var admins = await roles.GetUsersByRoleAsync(RoleConstants.ADMIN_ROLE);
+        return admins.Select(u => new UserResponseDto
+        {
+            Id = u.Id,
+            Name = u.Name,
+            Email = u.Email,
+            Address = u.Address,
+            Phone = u.Phone,
+            Dpi = u.Dpi,
+            JobName = u.JobName,
+            MonthlyIncome = u.MonthlyIncome,
+            Birthdate = u.Birthdate,
+            Role = RoleConstants.ADMIN_ROLE,
+            IsActive = u.IsActive,
+            IsEmailVerified = u.UserEmail?.EmailVerified ?? false,
+            CreatedAt = u.CreatedAt,
+            UpdatedAt = u.UpdatedAt
+        }).ToList();
+    }
+
+    public async Task<IReadOnlyList<UserResponseDto>> GetUsuariosAsync()
+    {
+        var usuarios = await roles.GetUsersByRoleAsync(RoleConstants.USER_ROLE);
+        return usuarios.Select(u => new UserResponseDto
+        {
+            Id = u.Id,
+            Name = u.Name,
+            Email = u.Email,
+            Address = u.Address,
+            Phone = u.Phone,
+            Dpi = u.Dpi,
+            JobName = u.JobName,
+            MonthlyIncome = u.MonthlyIncome,
+            Birthdate = u.Birthdate,
+            Role = RoleConstants.USER_ROLE,
+            IsActive = u.IsActive,
+            IsEmailVerified = u.UserEmail?.EmailVerified ?? false,
+            CreatedAt = u.CreatedAt,
+            UpdatedAt = u.UpdatedAt
+        }).ToList();
+    }
+
+    private static UserResponseDto MapToResponse(User u, string roleName)
+    {
+        return new UserResponseDto
+        {
+            Id = u.Id,
+            Name = u.Name,
+            Email = u.Email,
+            Address = u.Address,
+            Phone = u.Phone,
+            Dpi = u.Dpi,
+            JobName = u.JobName,
+            MonthlyIncome = u.MonthlyIncome,
+            Birthdate = u.Birthdate,
+            Role = roleName,
+            IsActive = u.IsActive,
+            IsEmailVerified = u.UserEmail?.EmailVerified ?? false,
+            CreatedAt = u.CreatedAt,
+            UpdatedAt = u.UpdatedAt
+        };
     }
 }
