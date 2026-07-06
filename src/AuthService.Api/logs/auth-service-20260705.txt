@@ -1,0 +1,1055 @@
+[2026-07-05 14:17:07 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 14:17:08 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 14:17:08 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 14:17:08 INF] AuthService API is running at http://localhost:5278. Health endpoint: http://localhost:5278/health {"SourceContext":"Program"}
+[2026-07-05 14:18:53 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 14:18:54 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 14:18:54 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 14:18:54 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 14:47:26 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNMQQQFG08U6:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQQQFG08U6"}
+[2026-07-05 14:47:26 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0712243-1970-4784-9768-0deabaf08693","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQQQFG08U6:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQQQFG08U6"}
+[2026-07-05 14:47:26 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQQQFG08U6:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQQQFG08U6"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 131
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 14:47:26 INF] HTTP POST /api/v1/Auth/login responded 401 in 383.5707 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQQQFG08U6:00000001","ConnectionId":"0HNMQQQFG08U6"}
+[2026-07-05 15:02:01 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 15:02:02 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 15:02:02 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 15:02:02 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 15:09:35 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 15:09:35 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 15:09:35 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 15:09:35 INF] AuthService API is running at http://localhost:5278. Health endpoint: http://localhost:5278/health {"SourceContext":"Program"}
+[2026-07-05 15:10:16 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 15:10:17 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 15:10:17 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 15:10:17 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-07-05 15:13:11 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 15:13:11 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 15:13:11 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 15:13:11 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 15:14:36 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 15:14:36 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 15:14:36 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 15:14:36 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-07-05 15:15:21 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 15:15:21 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 15:15:22 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 15:15:22 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 15:20:12 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNMQRCPHOQPJ:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPJ"}
+[2026-07-05 15:20:13 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPJ:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPJ"}
+[2026-07-05 15:20:13 INF] HTTP POST /api/v1/Auth/login responded 200 in 660.0877 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPJ:00000001","ConnectionId":"0HNMQRCPHOQPJ"}
+[2026-07-05 15:52:41 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPK:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPK"}
+[2026-07-05 15:52:41 INF] HTTP POST /api/v1/Auth/login responded 200 in 658.2614 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPK:00000001","ConnectionId":"0HNMQRCPHOQPK"}
+[2026-07-05 15:53:55 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 2.9365 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPL:00000001","ConnectionId":"0HNMQRCPHOQPL"}
+[2026-07-05 15:53:56 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPL:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQRCPHOQPL"}
+[2026-07-05 15:53:56 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPL:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQRCPHOQPL"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 15:53:56 INF] HTTP POST /api/v1/auth/login responded 401 in 158.8384 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPL:00000002","ConnectionId":"0HNMQRCPHOQPL"}
+[2026-07-05 15:54:00 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPL:00000003","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQRCPHOQPL"}
+[2026-07-05 15:54:00 INF] HTTP POST /api/v1/auth/login responded 200 in 126.4345 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPL:00000003","ConnectionId":"0HNMQRCPHOQPL"}
+[2026-07-05 16:05:39 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPM:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPM"}
+[2026-07-05 16:05:39 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPM:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPM"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 16:05:39 INF] HTTP POST /api/v1/Auth/login responded 401 in 153.4814 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPM:00000001","ConnectionId":"0HNMQRCPHOQPM"}
+[2026-07-05 16:05:49 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPM:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPM"}
+[2026-07-05 16:05:49 INF] HTTP POST /api/v1/Auth/login responded 200 in 179.5945 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPM:00000002","ConnectionId":"0HNMQRCPHOQPM"}
+[2026-07-05 16:31:03 INF] HTTP POST /api/v1/Auth/login responded 400 in 28.6090 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPN:00000001","ConnectionId":"0HNMQRCPHOQPN"}
+[2026-07-05 16:31:27 INF] HTTP POST /api/v1/Auth/login responded 400 in 1.1073 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPN:00000002","ConnectionId":"0HNMQRCPHOQPN"}
+[2026-07-05 16:33:02 INF] HTTP POST /api/v1/Auth/login responded 400 in 1.7791 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPN:00000003","ConnectionId":"0HNMQRCPHOQPN"}
+[2026-07-05 16:33:35 INF] HTTP POST /api/v1/Auth/login responded 400 in 1.0833 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPO:00000001","ConnectionId":"0HNMQRCPHOQPO"}
+[2026-07-05 16:34:58 INF] HTTP POST /api/v1/Auth/login responded 400 in 2.0700 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPP:00000001","ConnectionId":"0HNMQRCPHOQPP"}
+[2026-07-05 16:36:17 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPQ:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPQ"}
+[2026-07-05 16:36:17 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPQ:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPQ"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 16:36:17 INF] HTTP POST /api/v1/Auth/login responded 401 in 122.1073 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPQ:00000001","ConnectionId":"0HNMQRCPHOQPQ"}
+[2026-07-05 16:38:37 ERR] Failed executing DbCommand (7ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:37 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:37 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPR:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:37 ERR] HTTP POST /api/v1/Auth/login responded 500 in 58.5134 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPR:00000001","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:46 ERR] Failed executing DbCommand (2ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:46 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:46 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPR:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:46 ERR] HTTP POST /api/v1/Auth/login responded 500 in 25.4702 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPR:00000002","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:47 ERR] Failed executing DbCommand (6ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:47 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:47 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPR:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:47 ERR] HTTP POST /api/v1/Auth/login responded 500 in 28.5523 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPR:00000003","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:54 ERR] Failed executing DbCommand (1ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000004","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:54 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000004","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:54 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPR:00000004","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:54 ERR] HTTP POST /api/v1/Auth/login responded 500 in 22.3453 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPR:00000004","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:55 ERR] Failed executing DbCommand (1ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000005","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:38:55 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPR:00000005","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:55 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPR:00000005","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPR"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:38:55 ERR] HTTP POST /api/v1/Auth/login responded 500 in 22.3377 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPR:00000005","ConnectionId":"0HNMQRCPHOQPR"}
+[2026-07-05 16:41:07 ERR] Failed executing DbCommand (3ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPS:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPS"}
+[2026-07-05 16:41:07 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"b0848903-f581-4543-8083-477d87ebfa03","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQRCPHOQPS:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPS"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:41:07 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQRCPHOQPS:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQRCPHOQPS"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:41:07 ERR] HTTP POST /api/v1/Auth/login responded 500 in 30.5105 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQRCPHOQPS:00000001","ConnectionId":"0HNMQRCPHOQPS"}
+[2026-07-05 16:42:03 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 16:42:04 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 16:42:04 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 16:42:04 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 16:42:15 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNMQSQKH293K:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293K"}
+[2026-07-05 16:42:15 ERR] Failed executing DbCommand (13ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"a8bebb9c-b913-4030-94b0-2bcfcf0ae26b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSQKH293K:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293K"}
+[2026-07-05 16:42:15 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"a8bebb9c-b913-4030-94b0-2bcfcf0ae26b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSQKH293K:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293K"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:42:15 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQSQKH293K:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293K"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:42:15 ERR] HTTP POST /api/v1/Auth/login responded 500 in 382.5852 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSQKH293K:00000001","ConnectionId":"0HNMQSQKH293K"}
+[2026-07-05 16:44:01 INF] HTTP POST /api/v1/Auth/login responded 400 in 34.5438 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSQKH293L:00000001","ConnectionId":"0HNMQSQKH293L"}
+[2026-07-05 16:46:45 ERR] Failed executing DbCommand (2ms) [Parameters=[@__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.address, t.birthdate, t.created_at, t.dpi, t.email, t.is_active, t.job_name, t.monthly_income, t.name, t.password, t.phone, t.updated_at, t.id0, t.correo, t.created_at0, t.documento_identidad, t.is_active0, t.nombre_completo, t.numero_cuenta, t.saldo, t.telefono, t.tipo_cuenta, t.user_id, t.id1, t.email_verification_token, t.email_verification_token_expiry, t.email_verified, t.user_id0, t.id2, t.password_reset_token, t.password_reset_token_expiry, t.user_id1, t0.id, t0.assigned_at, t0.created_at, t0.role_id, t0.updated_at, t0.user_id, t0.id0, t0.created_at0, t0.name, t0.updated_at0
+FROM (
+    SELECT u.id, u.address, u.birthdate, u.created_at, u.dpi, u.email, u.is_active, u.job_name, u.monthly_income, u.name, u.password, u.phone, u.updated_at, u0.id AS id0, u0.correo, u0.created_at AS created_at0, u0.documento_identidad, u0.is_active AS is_active0, u0.nombre_completo, u0.numero_cuenta, u0.saldo, u0.telefono, u0.tipo_cuenta, u0.user_id, u1.id AS id1, u1.email_verification_token, u1.email_verification_token_expiry, u1.email_verified, u1.user_id AS user_id0, u2.id AS id2, u2.password_reset_token, u2.password_reset_token_expiry, u2.user_id AS user_id1
+    FROM "user" AS u
+    LEFT JOIN user_account AS u0 ON u.id = u0.user_id
+    LEFT JOIN user_email AS u1 ON u.id = u1.user_id
+    LEFT JOIN user_password_reset AS u2 ON u.id = u2.user_id
+    WHERE u.email LIKE @__email_1 ESCAPE ''
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u3.id, u3.assigned_at, u3.created_at, u3.role_id, u3.updated_at, u3.user_id, r.id AS id0, r.created_at AS created_at0, r.name, r.updated_at AS updated_at0
+    FROM user_role AS u3
+    INNER JOIN role AS r ON u3.role_id = r.id
+) AS t0 ON t.id = t0.user_id
+ORDER BY t.id, t.id0, t.id1, t.id2, t0.id {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"a8bebb9c-b913-4030-94b0-2bcfcf0ae26b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSQKH293M:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293M"}
+[2026-07-05 16:46:45 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"a8bebb9c-b913-4030-94b0-2bcfcf0ae26b","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSQKH293M:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293M"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:46:45 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQSQKH293M:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSQKH293M"}
+Npgsql.PostgresException (0x80004005): 22021: invalid byte sequence for encoding "UTF8": 0x00
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AuthService.Persistence.Repositories.UserRepository.GetByEmailAsync(String email) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Repositories\UserRepository.cs:line 32
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 119
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+  Exception data:
+    Severity: ERROR
+    SqlState: 22021
+    MessageText: invalid byte sequence for encoding "UTF8": 0x00
+    Where: unnamed portal parameter $1
+    File: mbutils.c
+    Line: 1854
+    Routine: report_invalid_encoding_int
+[2026-07-05 16:46:45 ERR] HTTP POST /api/v1/Auth/login responded 500 in 76.4948 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSQKH293M:00000001","ConnectionId":"0HNMQSQKH293M"}
+[2026-07-05 16:46:53 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 16:46:54 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 16:46:54 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 16:46:54 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 16:47:58 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNMQSTQUV6SR:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSTQUV6SR"}
+[2026-07-05 16:47:59 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"3689338a-7494-4e64-a307-9d62d75f09e5","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSTQUV6SR:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSTQUV6SR"}
+[2026-07-05 16:47:59 INF] HTTP POST /api/v1/Auth/login responded 200 in 817.1911 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSTQUV6SR:00000001","ConnectionId":"0HNMQSTQUV6SR"}
+[2026-07-05 16:48:56 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"3689338a-7494-4e64-a307-9d62d75f09e5","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSTQUV6SR:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSTQUV6SR"}
+[2026-07-05 16:48:56 INF] HTTP POST /api/v1/Auth/login responded 200 in 462.0171 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSTQUV6SR:00000002","ConnectionId":"0HNMQSTQUV6SR"}
+[2026-07-05 16:52:31 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"3689338a-7494-4e64-a307-9d62d75f09e5","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSTQUV6SS:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSTQUV6SS"}
+[2026-07-05 16:52:31 INF] HTTP POST /api/v1/Auth/login responded 200 in 149.4417 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSTQUV6SS:00000001","ConnectionId":"0HNMQSTQUV6SS"}
+[2026-07-05 16:54:43 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"3689338a-7494-4e64-a307-9d62d75f09e5","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQSTQUV6ST:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSTQUV6ST"}
+[2026-07-05 16:54:43 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQSTQUV6ST:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQSTQUV6ST"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 16:54:43 INF] HTTP POST /api/v1/Auth/login responded 401 in 244.4102 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQSTQUV6ST:00000001","ConnectionId":"0HNMQSTQUV6ST"}
+[2026-07-05 16:56:36 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-05 16:56:37 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-05 16:56:37 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-05 16:56:37 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-05 16:56:59 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNMQT2S0BJ2E:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:56:59 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2E:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:56:59 INF] HTTP POST /api/v1/Auth/login responded 200 in 746.3640 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2E:00000001","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:57:15 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2E:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:57:15 INF] HTTP POST /api/v1/Auth/login responded 200 in 401.5699 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2E:00000002","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:58:05 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 1.7925 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2F:00000001","ConnectionId":"0HNMQT2S0BJ2F"}
+[2026-07-05 16:58:05 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2F:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQT2S0BJ2F"}
+[2026-07-05 16:58:05 INF] HTTP POST /api/v1/auth/login responded 200 in 99.8210 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2F:00000002","ConnectionId":"0HNMQT2S0BJ2F"}
+[2026-07-05 16:58:54 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2E:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:58:54 INF] HTTP POST /api/v1/Auth/login responded 200 in 111.4662 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2E:00000003","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 16:59:12 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2F:00000003","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQT2S0BJ2F"}
+[2026-07-05 16:59:12 INF] HTTP POST /api/v1/auth/login responded 200 in 89.6631 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2F:00000003","ConnectionId":"0HNMQT2S0BJ2F"}
+[2026-07-05 17:00:19 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2E:00000004","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 17:00:19 INF] HTTP POST /api/v1/Auth/login responded 200 in 268.5777 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2E:00000004","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 17:00:44 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2E:00000005","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 17:00:44 INF] HTTP POST /api/v1/Auth/login responded 200 in 106.4866 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2E:00000005","ConnectionId":"0HNMQT2S0BJ2E"}
+[2026-07-05 17:03:48 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2G:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2G"}
+[2026-07-05 17:03:48 INF] HTTP POST /api/v1/Auth/login responded 200 in 131.9287 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2G:00000001","ConnectionId":"0HNMQT2S0BJ2G"}
+[2026-07-05 17:04:51 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2G:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2G"}
+[2026-07-05 17:04:51 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQT2S0BJ2G:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2G"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 17:04:51 INF] HTTP POST /api/v1/Auth/login responded 401 in 190.3834 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2G:00000002","ConnectionId":"0HNMQT2S0BJ2G"}
+[2026-07-05 17:04:57 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2G:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2G"}
+[2026-07-05 17:04:57 INF] HTTP POST /api/v1/Auth/login responded 200 in 116.9928 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2G:00000003","ConnectionId":"0HNMQT2S0BJ2G"}
+[2026-07-05 17:32:19 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2H:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2H"}
+[2026-07-05 17:32:19 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMQT2S0BJ2H:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2H"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-05 17:32:19 INF] HTTP POST /api/v1/Auth/login responded 401 in 201.5351 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2H:00000001","ConnectionId":"0HNMQT2S0BJ2H"}
+[2026-07-05 17:32:27 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2H:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2H"}
+[2026-07-05 17:32:27 INF] HTTP POST /api/v1/Auth/login responded 200 in 101.8514 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2H:00000002","ConnectionId":"0HNMQT2S0BJ2H"}
+[2026-07-05 17:44:07 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1642 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2I:00000001","ConnectionId":"0HNMQT2S0BJ2I"}
+[2026-07-05 17:44:07 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2I:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQT2S0BJ2I"}
+[2026-07-05 17:44:07 INF] HTTP POST /api/v1/auth/login responded 200 in 107.0412 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2I:00000002","ConnectionId":"0HNMQT2S0BJ2I"}
+[2026-07-05 17:56:17 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1016 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2J:00000001","ConnectionId":"0HNMQT2S0BJ2J"}
+[2026-07-05 17:56:17 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2J:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMQT2S0BJ2J"}
+[2026-07-05 17:56:17 INF] HTTP POST /api/v1/auth/login responded 200 in 97.0325 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2J:00000002","ConnectionId":"0HNMQT2S0BJ2J"}
+[2026-07-05 18:15:03 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"05d923a8-aa0e-4648-94fa-49828e073a88","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMQT2S0BJ2K:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMQT2S0BJ2K"}
+[2026-07-05 18:15:03 INF] HTTP POST /api/v1/Auth/login responded 200 in 149.8499 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMQT2S0BJ2K:00000001","ConnectionId":"0HNMQT2S0BJ2K"}
