@@ -1,0 +1,199 @@
+[2026-07-06 18:56:34 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-06 18:56:35 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-06 18:56:35 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-06 18:56:35 INF] AuthService API is running at http://localhost:5278. Health endpoint: http://localhost:5278/health {"SourceContext":"Program"}
+[2026-07-06 19:02:11 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-06 19:02:12 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-06 19:02:12 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-06 19:02:12 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-07-06 19:02:18 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"FailedToDeterminePort"},"SourceContext":"Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware","RequestId":"0HNMRODI57VBH:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMRODI57VBH"}
+[2026-07-06 19:02:18 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 9.9314 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBH:00000001","ConnectionId":"0HNMRODI57VBH"}
+[2026-07-06 19:02:18 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBH:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMRODI57VBH"}
+[2026-07-06 19:02:18 INF] HTTP POST /api/v1/auth/login responded 200 in 600.7528 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBH:00000002","ConnectionId":"0HNMRODI57VBH"}
+[2026-07-06 19:05:33 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBI:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMRODI57VBI"}
+[2026-07-06 19:05:33 INF] HTTP POST /api/v1/Auth/login responded 200 in 473.7438 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBI:00000001","ConnectionId":"0HNMRODI57VBI"}
+[2026-07-06 19:19:36 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.3316 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBJ:00000001","ConnectionId":"0HNMRODI57VBJ"}
+[2026-07-06 19:19:36 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBJ:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMRODI57VBJ"}
+[2026-07-06 19:19:36 INF] HTTP POST /api/v1/auth/login responded 200 in 135.2730 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBJ:00000002","ConnectionId":"0HNMRODI57VBJ"}
+[2026-07-06 19:19:43 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBJ:00000003","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMRODI57VBJ"}
+[2026-07-06 19:19:43 INF] HTTP POST /api/v1/auth/login responded 200 in 90.5964 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBJ:00000003","ConnectionId":"0HNMRODI57VBJ"}
+[2026-07-06 19:27:18 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1778 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBK:00000001","ConnectionId":"0HNMRODI57VBK"}
+[2026-07-06 19:27:18 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBK:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMRODI57VBK"}
+[2026-07-06 19:27:18 INF] HTTP POST /api/v1/auth/login responded 200 in 123.6192 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBK:00000002","ConnectionId":"0HNMRODI57VBK"}
+[2026-07-06 19:30:40 INF] HTTP OPTIONS /api/v1/Users/admins responded 204 in 0.1079 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBL:00000001","ConnectionId":"0HNMRODI57VBL"}
+[2026-07-06 19:30:40 INF] HTTP OPTIONS /api/v1/Users/admins responded 204 in 0.0446 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBM:00000001","ConnectionId":"0HNMRODI57VBM"}
+[2026-07-06 19:30:40 INF] HTTP GET /api/v1/Users/admins responded 200 in 91.1085 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBL:00000002","ConnectionId":"0HNMRODI57VBL"}
+[2026-07-06 19:30:40 INF] HTTP GET /api/v1/Users/admins responded 200 in 5.7765 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBM:00000002","ConnectionId":"0HNMRODI57VBM"}
+[2026-07-06 19:32:58 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2242 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBN:00000001","ConnectionId":"0HNMRODI57VBN"}
+[2026-07-06 19:32:58 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBN:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMRODI57VBN"}
+[2026-07-06 19:32:58 INF] HTTP POST /api/v1/auth/login responded 200 in 312.1754 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBN:00000002","ConnectionId":"0HNMRODI57VBN"}
+[2026-07-06 19:38:30 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBO:00000001","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMRODI57VBO"}
+[2026-07-06 19:38:30 INF] HTTP POST /api/v1/Auth/login responded 200 in 195.2605 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBO:00000001","ConnectionId":"0HNMRODI57VBO"}
+[2026-07-06 19:38:43 WRN] Failed login attempt {"EventId":{"Id":1003,"Name":"LogFailedLoginAttempt"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBO:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMRODI57VBO"}
+[2026-07-06 19:38:43 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMRODI57VBO:00000002","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMRODI57VBO"}
+System.UnauthorizedAccessException: Invalid credentials
+   at AuthService.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 145
+   at AuthService.Api.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 131
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-06 19:38:43 INF] HTTP POST /api/v1/Auth/login responded 401 in 149.4371 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBO:00000002","ConnectionId":"0HNMRODI57VBO"}
+[2026-07-06 19:38:46 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBO:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMRODI57VBO"}
+[2026-07-06 19:38:46 INF] HTTP POST /api/v1/Auth/login responded 200 in 153.9418 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBO:00000003","ConnectionId":"0HNMRODI57VBO"}
+[2026-07-06 19:47:14 INF] HTTP POST /api/v1/Auth/register responded 400 in 35.6802 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBP:00000001","ConnectionId":"0HNMRODI57VBP"}
+[2026-07-06 19:50:30 INF] HTTP POST /api/v1/Auth/register responded 400 in 6.5725 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBQ:00000001","ConnectionId":"0HNMRODI57VBQ"}
+[2026-07-06 19:51:02 INF] HTTP POST /api/v1/Auth/register responded 400 in 0.9096 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBQ:00000002","ConnectionId":"0HNMRODI57VBQ"}
+[2026-07-06 19:55:41 INF] HTTP POST /api/v1/Auth/register responded 400 in 1.0379 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBR:00000001","ConnectionId":"0HNMRODI57VBR"}
+[2026-07-06 19:58:50 INF] HTTP POST /api/v1/Auth/register responded 400 in 1.1266 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBS:00000001","ConnectionId":"0HNMRODI57VBS"}
+[2026-07-06 19:59:06 WRN] Registration rejected: email already exists {"EventId":{"Id":1004,"Name":"LogRegistrationWithExistingEmail"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"d653806b-9aa6-48e7-9888-b3dc65ad312d","ActionName":"AuthService.Api.Controllers.AuthController.Register (AuthService.Api)","RequestId":"0HNMRODI57VBS:00000002","RequestPath":"/api/v1/Auth/register","ConnectionId":"0HNMRODI57VBS"}
+[2026-07-06 19:59:06 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNMRODI57VBS:00000002","RequestPath":"/api/v1/Auth/register","ConnectionId":"0HNMRODI57VBS"}
+AuthService.Application.Exceptions.BusinessException: Email already exists
+   at AuthService.Application.Services.AuthService.RegisterAsync(RegisterDto registerDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Application\Services\AuthService.cs:line 32
+   at AuthService.Api.Controllers.AuthController.Register(RegisterDto registerDto) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Controllers\AuthController.cs:line 114
+   at lambda_method279(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 19
+[2026-07-06 19:59:06 INF] HTTP POST /api/v1/Auth/register responded 400 in 42.3489 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBS:00000002","ConnectionId":"0HNMRODI57VBS"}
+[2026-07-06 20:00:02 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"64cbd9af-1812-46a9-8672-e1e852b4b535","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMRODI57VBS:00000003","RequestPath":"/api/v1/Auth/login","ConnectionId":"0HNMRODI57VBS"}
+[2026-07-06 20:00:02 INF] HTTP POST /api/v1/Auth/login responded 200 in 149.8901 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMRODI57VBS:00000003","ConnectionId":"0HNMRODI57VBS"}
+[2026-07-06 23:16:31 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-06 23:16:32 ERR] An error occurred while initializing the database {"SourceContext":"Program"}
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.AuthenticateSASL(List`1 mechanisms, String username, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.UnpooledDataSource.Get(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at Program.<Main>$(String[] args) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Program.cs:line 185
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 329
+    Routine: auth_failed
+[2026-07-06 23:20:16 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-06 23:20:18 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-06 23:20:19 ERR] Failed executing DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM role AS r) {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command"}
+[2026-07-06 23:20:19 ERR] An exception occurred while iterating over the results of a query for context type 'AuthService.Persistence.Data.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "role" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "role" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1449
+    Routine: parserOpenTable {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query"}
+Npgsql.PostgresException (0x80004005): 42P01: relation "role" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "role" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1449
+    Routine: parserOpenTable
+[2026-07-06 23:20:19 ERR] An error occurred while initializing the database {"SourceContext":"Program"}
+Npgsql.PostgresException (0x80004005): 42P01: relation "role" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method9(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at AuthService.Persistence.Data.DataSeeder.SeedAsync(ApplicationDbContext context) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Persistence\Data\DataSeeder.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\aless\Documents\Portfolio\Proyecto Ban-k\auth-service-ban-k\src\AuthService.Api\Program.cs:line 188
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "role" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1449
+    Routine: parserOpenTable
+[2026-07-06 23:22:03 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-07-06 23:22:13 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-07-06 23:22:14 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-07-06 23:22:14 INF] AuthService API is running at http://localhost:5278. Health endpoint: http://localhost:5278/health {"SourceContext":"Program"}
